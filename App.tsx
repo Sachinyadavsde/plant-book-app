@@ -1,11 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import Signup from "./screens/Signup";
 
 export default function App() {
+  console.log("checking if the app is running");
   return (
     <View style={styles.container}>
-      <Text style={{ color: "#FFFFFF", fontSize: 20 }}>Hello world 🌎</Text>
-      <StatusBar style="auto" />
+      <Signup />
+      {/* <Text style={{ color: "#FFFFFF" }}>Welcome to the App!</Text> */}
     </View>
   );
 }
@@ -13,8 +15,5 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#000",
-    alignItems: "center",
-    justifyContent: "center",
   },
 });
